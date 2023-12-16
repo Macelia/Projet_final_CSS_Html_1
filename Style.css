@@ -1,0 +1,196 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  
+}
+:root{
+
+     /* --les variables-- */
+     --main-color: #00b5ff;
+     --sec-color:#28c7ff;
+     --text-color: #a9ddff;
+     --bg-color:#e8f5ff;
+     --logbtn-color: #052ee8;
+       /* background: var(--sec-color);
+        .color5 {color: #ffffff;} */
+
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+body {
+    background-color:  var(--bg-color);
+}
+
+header nav{
+    background:linear-gradient(rgba(0,120,240,0.6), rgba(209, 238, 103, 0.3));
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;                             
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 05s ease-in-out;
+   
+}
+
+header nav a:hover{
+ letter-spacing: 4px;
+ text-decoration: none;
+ color: var(--text-color);
+}
+
+.logo{
+    font-size: 25px;
+    color: var(--logbtn-color);
+}
+
+.logo span{
+   
+    color: rgb(218, 220, 228);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+span:hover{
+    color: rgb(3, 43, 68);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style-type: none;
+    padding: 10px 10px;
+    text-align: center;
+  
+}
+li{
+    display: inline;
+    margin-right: 20px;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+
+.btn-reservation{
+    color: var(--logbtn-color);
+    font-size: 18px;
+    padding: 6px 40px;
+    transition: 0.5s;
+}
+
+.btn-reservation:hover{
+    color: #0a2a99;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.baner{
+    background: linear-gradient(rgba(0,0,0,0.1),#333), url("Assets/hotel2.jpg");
+    background-size: 70%;
+    /* background-position: center;
+    background-size: cover;    */
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;             /* centrer les items au centre de l'image verticalement*/
+    justify-content: center;     /* centrer les items au centre de l'image horizentalement*/
+    flex-direction: column;         /* centrer les items en COLOMNES au centre de l'image*/
+    position: relative;
+    
+}
+.baner h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+   color: #052ee8;
+    text-transform: lowercase;
+}
+.baner p{
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.home-btn{
+    margin-top: 5%;
+    margin-bottom: 20px;
+    border: 2px solid #28c7ff;
+    border-radius: 3px;
+    background:linear-gradient(rgba(0,120,240,0.4), rgba(237, 168, 66, 0.8));
+    text-decoration: 0;
+}
+.home-btn:hover{
+    text-transform: uppercase;
+  
+
+}
+.find_trip{
+    /* background-color: #222; */
+    background:linear-gradient(rgba(0,120,240,0.6), rgba(209, 238, 103, 0.3), rgba(196, 138, 44, 0.3));
+    padding: 20px;
+    width: 70%;
+    position: relative ; 
+    border: -50px;
+    top: -50px;
+    bottom: 165px;
+    left: 170px;
+   
+                           
+
+}
+.find_trip form{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+
+.find_trip form div , .find_trip form input[type="submit"]{
+    display:flex;
+    flex-direction: column;
+    width: 20%;
+}
+.find_trip form label{
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 10px;              /*espace*/  
+}
+.find_trip form input{
+    padding: 5px 25px;
+    background: transparent;
+    border: 1px solid #29d9d5;
+    outline: 0;                          /* outline: 30; */
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    
+}
+.find_trip form input[type="submit"]{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #29d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.find_trip form input[type="submit"]:hover{
+    color: #fff;
+    box-shadow: 0 0 10px rgb(220, 139, 39);
+    font-weight: bold;
+  
+}
